@@ -6,25 +6,78 @@
     <title>INTEGRACALC</title>
 </head>
 <body>
-<h1
-        style="text-align: center"> <img src="IMG/descarga.png"height="50">UNIVERSIDAD AUTONOMA DE CHIAPAS <img src="IMG/descarga.png" height="50">
+
+<h1>
+    <img src="IMG/descarga.png"height="50">UNIVERSIDAD AUTONOMA DE CHIAPAS <img src="IMG/descarga.png" height="50">
+
 </h1>
 
-<h2 >BIENVENIDO A <span style="color:grey" > INTEGRACALC</span>
+<h2 >BIENVENIDO A
+    <span style="color:white" > INTEGRACALC</span>
 </h2>
 
-<h1 style="text-align: center;color: grey"><i>SISTEMA DE CÁLCULO DE ECUACIONES </i> </h1>
+<h1 style="text-align: center;color: gray"><i>SISTEMA DE CÁLCULO DE ECUACIONES </i> </h1>
 
 <form>
     <div>
-        <label for="nombre"> ¿Cual es tu nombre?</label>
-        <input  id="nombre" name="nombre" placeholder="Ingresa tu nombre" type="text"/>
+        <label
+                for="nombre"> ¿CUAL ES TU NOMBRE?
+        </label>
+        <input
+                id="nombre"
+                name="nombre"
+                placeholder="Ingresa tu nombre"
+                type="text"/>
     </div>
 
+    <br>
     <div>
-        <p>Hoka</p>
-        crsar
+        <label for="funcion" > INGRESE UNA FUNCION
+
+        </label>
+        <input
+        id="funcion"
+        name="funcion"
+        placeholder="Ejemplo: x^2-5x+6"
+        type="text">
+    </div>
+
+    <br>
+
+    <div>
+        <button
+               style="color: black"
+               type="button"
+        onclick="analizarFucion()">
+            Analizar funcion
+        </button>
+    </div>
+
+    <hr>
+
+    <div  id="resultado">
+        <h3> RESULTADOS </h3>
+        <div class="datos">
+            <p> <strong>Grado: </strong>
+                <span id="grado">-</span></p>
+            <p> <strong>Raíces:</strong> <span id="raices">-</span></p>
+            <p> <strong>Ordenada al origen: </strong>
+                <span id="ordenada">-</span></p>
+            <p> <strong>Dominio: </strong>
+                <span id="dominio">-</span></p>
+            <p> <strong>Rango: </strong>
+                <span id="rango">-</span></p>
+            <p> <strong>AV: </strong>
+                <span id="AV">-</span></p>
+            <p> <strong>AH: </strong>
+                <span id="AH">-</span></p>
+            <p> <strong>Huecos: </strong><span id="huecos">-</span>
+            </p>
+
+        </div>
+
     </div>
 </form>
+<script src="CALCULOS.js"></script>
 </body>
 </html>

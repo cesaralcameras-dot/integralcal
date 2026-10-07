@@ -1,9 +1,41 @@
 div{
     display: flex;
     justify-content: center;
-}
+    color: white;
 
+}
+#resultado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: wheat;
+    border: 1px solid wheat;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(0,0,0,0.6);
+}
 h2{
     text-align: center;
 }
-
+body{
+    background-image: url("IMG/images (1).png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+p{
+    color: gainsboro;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+.datos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+}
+.datos p{
+    color:wheat;
+    margin: 0;
+}
